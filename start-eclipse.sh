@@ -1,8 +1,10 @@
-mage to use
-DOCKER_IMAGE_NAME="yannsm/eclipse"
+#! /bin/bash
+
+#immage to use
+DOCKER_IMAGE_NAME="yanninho/eclipse"
 
 #local workspace
-LOCAL_WORKSPACE="/home/yannsm/workspace"
+LOCAL_WORKSPACE="[ Your local directory ]"
 
 # local name for the container
 DOCKER_CONTAINER_NAME="eclipse"

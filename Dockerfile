@@ -4,7 +4,7 @@ MAINTAINER Yannick Saint Martino
 # make sure the package repository is up to date
 RUN apt-get update
 
-RUN apt-get install -y openjdk-7-jdk
+RUN apt-get install -y openjdk-7-jdk && rm -rf /var/lib/apt/lists/*
 
 RUN groupadd eclipseuser && useradd eclipseuser -s /bin/bash -m -g eclipseuser -G eclipseuser && adduser eclipseuser sudo
 RUN echo 'eclipseuser:eclipseuser' |chpasswd 
